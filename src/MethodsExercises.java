@@ -166,5 +166,4 @@ public class MethodsExercises {
         System.out.println(display);
     }
 
-
 }
