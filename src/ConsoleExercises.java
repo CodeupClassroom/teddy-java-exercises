@@ -25,7 +25,8 @@ public class ConsoleExercises {
         System.out.println(sentence);
 
         System.out.println("Enter the width of the classroom");
-        double width = Double.parseDouble(scanner.nextLine()); // scanner.nextDouble();
+        String widthString = scanner.nextLine();
+        double width = Double.parseDouble(widthString); // scanner.nextDouble();
 
         System.out.println("Enter the length of the classroom");
         double length = Double.parseDouble(scanner.nextLine());
