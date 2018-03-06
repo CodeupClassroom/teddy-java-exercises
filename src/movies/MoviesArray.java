@@ -121,4 +121,17 @@ public class MoviesArray {
             new Movie("Yankee Doodle Dandy", "musical")
         };
     }
+
+
+    public static int[] generateInts() {
+        return new int[]{
+            100 + 23,
+            456 * 2 / 9,
+            789
+        };
+    }
+
+    public static void main(String[] args) {
+        int[] myNumbers = generateInts();
+    }
 }
