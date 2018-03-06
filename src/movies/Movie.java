@@ -7,11 +7,20 @@ package movies;
  */
 public class Movie {
     private String title;
-    private String category;
+    private String genre;
+    private int rating;
 
-    public Movie(String title, String category) {
+    public Movie(String title, String genre) {
         this.title = title;
-        this.category = category;
+        this.genre = genre;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
     public String getTitle() {
@@ -22,11 +31,20 @@ public class Movie {
         this.title = title;
     }
 
-    public String getCategory() {
-        return category;
+    public String getGenre() {
+        return genre;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+            "title='" + title + '\'' +
+            ", genre='" + genre + '\'' +
+            ", rating=" + rating +
+            '}';
     }
 }
