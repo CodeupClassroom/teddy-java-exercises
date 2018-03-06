@@ -1,5 +1,10 @@
 package movies;
 
+/**
+ * - private properties
+ * - a constructor that sets those properties
+ * - getters and setters
+ */
 public class Movie {
     private String title;
     private String category;
