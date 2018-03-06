@@ -39,7 +39,7 @@ public class MoviesApplication {
         }
     }
 
-    public static void main(String[] args) {
+    public static void showMenu() {
         do {
             System.out.println("What would you like to do?");
             System.out.println("0 - exit");
@@ -63,5 +63,9 @@ public class MoviesApplication {
                     break;
             }
         } while(true);
+    }
+
+    public static void main(String[] args) {
+        showMenu();
     }
 }
