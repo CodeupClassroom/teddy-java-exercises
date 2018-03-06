@@ -5,10 +5,10 @@ public class CircleTest {
         System.out.print("Here's how many circles are created right now: ");
         System.out.println(Circle.getNumberOfCircles());
 
-        Circle one = new Circle(1);
+        Circle one = new Circle(3);
         System.out.println(Circle.getNumberOfCircles());
 
-        Circle another = new Circle(44);
+        Circle another = new Circle(42);
         System.out.println(Circle.getNumberOfCircles());
 
     }
