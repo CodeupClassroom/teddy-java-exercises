@@ -13,6 +13,9 @@ public class HelloWorld {
         String myString = "Hi, Everybody!";
         System.out.println(myString);
 
+        Integer someNum;
+        Long someLong;
+
         float myNumber = (float) 3.14159257;
         System.out.println(myNumber);
 

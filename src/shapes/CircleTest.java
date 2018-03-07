@@ -10,6 +10,5 @@ public class CircleTest {
 
         Circle another = new Circle(42);
         System.out.println(Circle.getNumberOfCircles());
-
     }
 }
