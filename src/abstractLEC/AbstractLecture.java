@@ -1,4 +1,4 @@
-package lec;
+package abstractLEC;
 
 public class AbstractLecture {
 

@@ -1,4 +1,4 @@
-package lec;
+package abstractLEC;
 
 public class Pug extends Dog {
     public void eat() {

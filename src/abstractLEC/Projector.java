@@ -1,4 +1,4 @@
-package lec;
+package abstractLEC;
 
 public class Projector implements Controllable, Navigatable {
 

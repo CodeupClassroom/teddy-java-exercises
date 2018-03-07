@@ -1,4 +1,4 @@
-package lec.building;
+package abstractLEC.building;
 
 public interface Rentable {
 

@@ -1,4 +1,4 @@
-package lec.building;
+package abstractLEC.building;
 
 public class House extends PrivateBuilding implements Rentable, ClimateControllable {
 
