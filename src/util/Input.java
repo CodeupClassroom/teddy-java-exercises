@@ -13,6 +13,11 @@ public class Input {
         return scan.next();
     }
 
+    public String getString(String prompt) {
+        System.out.print(prompt);
+        return getString();
+    }
+
     public boolean yesNo() {
         String userInput = getString();
         if(userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes")) {
