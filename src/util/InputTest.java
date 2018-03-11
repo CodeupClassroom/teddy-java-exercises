@@ -4,30 +4,37 @@ public class InputTest {
     public static void main(String[] args) {
         Input input = new Input();
 
-        int num1 = input.getInt(1, 10, "Please input an integer between 1 and 10");
+//        System.out.println("Please enter a whole number!");
+//        int wholeNumber = input.getInt();
+//        System.out.println(wholeNumber);
 
-        System.out.println("You input the number " + num1);
+//        int otherWholeNumber = input.getInt("Please enter a whole number");
+//        System.out.println(otherWholeNumber);
 
-        System.out.println("Do you want to input another integer?");
-        boolean choice = input.yesNo();
 
-        if(choice) {
-            int num2 = input.getInt("Please input ANY valid integer");
-            System.out.println("You entered: " + num2);
-        }
+//        int anotherNumber = input.getInt(1, 10, "Please enter a number between 1 and 10");
+//        System.out.println(anotherNumber);
 
-        if(input.yesNo("Wanna enter an integer?")) {
-            int num3 = input.getInt("Please enter  any integer");
-            System.out.println("You entered: " + num3);
-        }
 
-        double someDouble;
-        someDouble = input.getDouble("Please input any number");
-        System.out.println("You input " + someDouble);
+//
+//        System.out.println("Please enter a number");
+//        double aDouble = input.getDouble();
+//        System.out.println(aDouble);
 
-        double doubleInRange;
-        doubleInRange = input.getDouble(1.1, 9.9, "Input any number between 1.1 and 9.9");
 
-        System.out.println(doubleInRange);
+
+//        double anotherDouble = input.getDouble(0, 1, "Enter a number within 0 to 1");
+//        System.out.println(anotherDouble);
+//
+//
+//        // BONUS
+//        int binary = input.getBinary("Please enter a binary number");
+//        System.out.println(binary);
+//
+//        System.out.println("Please enter a hexadecimal number");
+//        int hex = input.getHex();
+//        System.out.println(hex);
+
+
     }
 }
