@@ -11,9 +11,9 @@ import java.util.List;
 public class FileHelper {
 
     public static void main(String[] args) throws IOException {
-        makeExciting("README.md");
+//        makeExciting("src/util/FileHelper.java");
     }
-    
+
     public static List<String> slurp(String filepath) {
         Path path = Paths.get(filepath);
         try {
@@ -25,16 +25,22 @@ public class FileHelper {
         }
     }
 
+    /**
+     * The way we can define an "optional" argument in Java is with overloaded methods.
+     * That is, one version of spit is defined with 2 parameters, and the other is defined
+     * with 3.
+     * The version defined with 2 parameters just calls the other one, and passes the default value.
+     * This is a fairly common pattern.
+     */
     public static void spit(String filename, List<String> contents) {
         spit(filename, contents, false);
     }
-
     public static void spit(String filename, List<String> contents, boolean append) {
         // set the file open mode, either append to an existing file, or overwrite the existing contents
         StandardOpenOption option = append ? StandardOpenOption.APPEND : StandardOpenOption.TRUNCATE_EXISTING;
         Path path = Paths.get(filename);
-
         // make sure to create parent directories
+        // (Files.write will create the file if it doesn't exist, but not directories)
         if (! Files.exists(path)) {
             try {
                 Files.createDirectories(path);
@@ -44,7 +50,6 @@ public class FileHelper {
                 System.exit(1);
             }
         }
-
         // write the file content
         try {
             Files.write(path, contents, option);
@@ -54,6 +59,12 @@ public class FileHelper {
         }
     }
 
+    /**
+     * Here we can just re-use our slurp and spit methods so we don't have to
+     * write all the boilerplate associated with paths and exception handling.
+     * I saw a lot of students duplicating code to open files instead of
+     * using the methods they just defined.
+     */
     public static void makeExciting(String filename) {
         List<String> excitedLines = new ArrayList<>();
 
