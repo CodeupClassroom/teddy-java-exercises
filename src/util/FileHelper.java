@@ -43,7 +43,7 @@ public class FileHelper {
         // (Files.write will create the file if it doesn't exist, but not directories)
         if (! Files.exists(path)) {
             try {
-                Files.createDirectories(path);
+                Files.createDirectories(path.getParent());
                 Files.createFile(path);
             } catch (IOException e) {
                 System.out.printf("Error creating file %s: %s\n", path, e.getMessage());
